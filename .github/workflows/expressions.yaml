@@ -33,7 +33,8 @@ jobs:
         run: echo "Triggered from main branch!"
 
       - name: "Print Variables"
-        env: STEP_VAR: 'Step-level variable'
+        env: 
+          STEP_VAR: 'Step-level variable'
         run: |
           echo "Step var: ${{ env.STEP_VAR }}" 
           echo "Job var: ${{ env.JOB_VAR }}" 
