@@ -2,12 +2,12 @@ name: Expressions
 on:
   pull_request:
   workflow_dispatch:
-inputs:
-  debug:
-    default: 'false'
+    inputs:
+      debug:
+        default: 'false'
 
-  fail:
-    default: 'false'
+      fail:
+        default: 'false'
 
 env:
   WORKFLOW_VAR: 'This is a workflow-level variable'
