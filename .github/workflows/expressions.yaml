@@ -4,9 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       debug:
+        description: 'modo debug'
+        required: false
         default: 'false'
-
       fail:
+        description: 'modo fail'
+        required: false
         default: 'false'
 
 env:
