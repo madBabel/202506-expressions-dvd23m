@@ -42,7 +42,8 @@ jobs:
           echo "Overwritten: ${{ env.OVERWRITTEN }}"
 
       - name: "Overwrite and Print"
-        env: OVERWRITTEN: 'Overwritten at step level'
+        env: 
+          OVERWRITTEN: 'Overwritten at step level'
         run:
           echo "Overwritten var: $OVERWRITTEN"
 
